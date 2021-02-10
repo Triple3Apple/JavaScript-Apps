@@ -14,6 +14,7 @@ html {
 
 body {
   background: rgb(132, 134, 143);
+  padding: auto;
 }
 
 .simple-apps {
@@ -24,26 +25,28 @@ body {
   flex-direction: column;
 
   flex-wrap: nowrap;
-  justify-content: center;
+  justify-content: space-around;
 
   align-items: center;
 
-  height: 55vh;
+  height: 100vh;
 
   border: 5rem black;
 
   padding: 5rem;
+  margin: 0 auto;
 }
 
 .box {
   margin: 1rem;
-  background: red;
+  background: none;
   padding: 5rem;
   border: 0.25rem solid black;
   width: 40vw;
-  height: 30vh;
+  height: 35vh;
   display: inline-block;
   align-items: center;
+  min-width: 500px;
 }
 
 .buttons {
@@ -104,4 +107,20 @@ button {
 .reset-button:hover {
   background-color: azure;
   color: black;
+}
+
+#age-result {
+  font-size: 1.5rem;
+  color: rgb(0, 0, 0);
+}
+
+#age-result h3 {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(135, 255, 105, 0.445);
+  border-radius: 0.5rem;
+}
+
+.result-span {
+  color: blue;
 }
