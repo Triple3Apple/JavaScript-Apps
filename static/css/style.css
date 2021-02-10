@@ -1,0 +1,107 @@
+/* Removes all default padding */
+* {
+  margin: 0;
+  padding: 0;
+
+  /*Removes scroll bar (default is content-box)*/
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  /* *** Makes it so 1rem = 10px *** */
+}
+
+body {
+  background: rgb(132, 134, 143);
+}
+
+.simple-apps {
+  position: relative;
+  background: lightgray;
+  display: flex;
+
+  flex-direction: column;
+
+  flex-wrap: nowrap;
+  justify-content: center;
+
+  align-items: center;
+
+  height: 55vh;
+
+  border: 5rem black;
+
+  padding: 5rem;
+}
+
+.box {
+  margin: 1rem;
+  background: red;
+  padding: 5rem;
+  border: 0.25rem solid black;
+  width: 40vw;
+  height: 30vh;
+  display: inline-block;
+  align-items: center;
+}
+
+.buttons {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.box1 {
+  background: blanchedalmond;
+}
+
+.box h2 {
+  display: block;
+
+  /* Align text to center */
+  text-align: center;
+
+  font-size: 3rem;
+
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.box button {
+  font-size: 2rem;
+  width: 20vh;
+  height: 7vh;
+  padding: 1rem;
+  margin: 2rem;
+  border-radius: 0.5rem;
+}
+
+button {
+  transition-duration: 0.35s;
+  cursor: pointer;
+}
+
+.interact-button {
+  color: white;
+  background-color: rgb(83, 119, 240);
+  border: 0.2rem solid rgb(83, 119, 240);
+}
+
+.interact-button:hover {
+  background-color: azure;
+  color: black;
+}
+
+.reset-button {
+  background-color: rgb(240, 70, 70);
+  color: white;
+  border: 0.2rem solid rgb(240, 70, 70);
+}
+
+.reset-button:hover {
+  background-color: azure;
+  color: black;
+}
