@@ -10,14 +10,18 @@
 html {
   font-size: 62.5%;
   /* *** Makes it so 1rem = 10px *** */
+
+  font-family: "Roboto", sans-serif;
 }
 
 body {
   background: rgb(132, 134, 143);
-  padding: auto;
 }
 
-.simple-apps {
+/* flex-box container */
+.simple-apps-container {
+  /*  remove the border (for testing only)*/
+  border: 3px solid blue;
   position: relative;
   background: lightgray;
   display: flex;
@@ -29,9 +33,7 @@ body {
 
   align-items: center;
 
-  height: 100vh;
-
-  border: 5rem black;
+  /* border: 5rem black; */
 
   padding: 5rem;
   margin: 0 auto;
@@ -42,11 +44,28 @@ body {
   background: none;
   padding: 5rem;
   border: 0.25rem solid black;
+
   width: 40vw;
+  /*
   height: 35vh;
+  */
   display: inline-block;
   align-items: center;
   min-width: 500px;
+
+  background: rgb(191, 220, 230);
+
+  /* 
+  property specifies how much of the remaining space
+  in the flex container should be assigned to the item 
+  (the flex grow factor) 
+  */
+
+  /*
+  flex-grow: 1;
+
+  flex-basis: 20rem;
+  */
 }
 
 .buttons {
@@ -58,6 +77,12 @@ body {
 }
 
 .box1 {
+  background: blanchedalmond;
+}
+
+.box2 {
+  margin: 0 auto;
+  text-align: center;
   background: blanchedalmond;
 }
 
@@ -80,6 +105,17 @@ body {
   padding: 1rem;
   margin: 2rem;
   border-radius: 0.5rem;
+}
+
+#generate-cat-button {
+  color: white;
+  background-color: rgb(83, 119, 240);
+  border: 0.2rem solid rgb(83, 119, 240);
+}
+
+#generate-cat-button:hover {
+  background-color: azure;
+  color: black;
 }
 
 button {
@@ -109,6 +145,17 @@ button {
   color: black;
 }
 
+#remove-cats-button {
+  background-color: rgb(240, 70, 70);
+  color: white;
+  border: 0.2rem solid rgb(240, 70, 70);
+}
+
+#remove-cats-button:hover {
+  background-color: azure;
+  color: black;
+}
+
 #age-result {
   font-size: 1.5rem;
   color: rgb(0, 0, 0);
@@ -123,4 +170,44 @@ button {
 
 .result-span {
   color: blue;
+}
+
+#cat-gif-flexbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#cat-gif-flexbox img {
+  box-shadow: -9px 10px 21px -5px rgb(122, 122, 122);
+  margin: 1rem;
+  width: 30rem;
+}
+
+#year-input-div {
+  text-align: center;
+  padding: 2rem;
+}
+
+#year-input-div label {
+  font-size: 2.5rem;
+  padding: 2rem;
+}
+
+#year-input-div input {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  width: 30%;
+  box-sizing: border-box;
+  color: #2c3e50;
+  font-size: 13px;
+}
+
+#year-input:focus {
+  outline-width: 0;
+  border: 1px solid rgb(151, 151, 151);
+  background: rgb(237, 237, 237);
 }

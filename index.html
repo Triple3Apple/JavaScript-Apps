@@ -6,23 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Webpage for super basic JS" />
     <link rel="stylesheet" href="static/css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <title>Javascript Crash Course</title>
   </head>
   <body>
-    <div class="simple-apps">
+    <div class="simple-apps-container">
       <div class="box box1">
         <h2>Your Age in Minutes</h2>
+        <div id="year-input-div">
+          <label for="year-input">What year were you born on?</label>
+          <input type="number" name="year-input" id="year-input" min="0" />
+        </div>
         <div class="buttons">
           <button class="interact-button" onclick="ageInMinutes()">
-            Click Me
+            Get Age
           </button>
-          <button class="reset-button">Reset</button>
+          <button class="reset-button" onclick="reset()">Reset</button>
         </div>
-
         <div id="age-result"></div>
       </div>
+
       <div class="box box2">
-        <h2>Something...</h2>
+        <h2>Cat Generator</h2>
+        <div class="buttons">
+          <button id="generate-cat-button" onclick="generateCat()">
+            Generate Cat
+          </button>
+          <button id="remove-cats-button" onclick="removeCats()">
+            Remove All Cats
+          </button>
+        </div>
+
+        <div id="cat-gif-flexbox"></div>
+      </div>
+
+      <div class="box box3">
+        <h2>Rock, Paper, Scissors!</h2>
       </div>
     </div>
 
