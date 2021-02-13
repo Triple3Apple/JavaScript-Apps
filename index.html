@@ -15,6 +15,7 @@
   </head>
   <body>
     <div class="simple-apps-container">
+      <!-- Age in Minutes Calculator -->
       <div class="box box1">
         <h2>Your Age in Minutes</h2>
         <div id="year-input-div">
@@ -30,6 +31,7 @@
         <div id="age-result"></div>
       </div>
 
+      <!-- Cat GIF generator -->
       <div class="box box2">
         <h2>Cat Generator</h2>
         <div class="buttons">
@@ -40,12 +42,26 @@
             Remove All Cats
           </button>
         </div>
-
         <div id="cat-gif-flexbox"></div>
       </div>
 
+      <!-- Rock, Paper, Scissors -->
       <div class="box box3">
         <h2>Rock, Paper, Scissors!</h2>
+        <div id="rps-img-flexbox">
+          <img src="/static/images/rock.png" class="rps-image" id="rock" alt="rock" onclick="rpsGame(this)">
+          <img src="/static/images/paper.png" class="rps-image" id="paper" alt="paper" onclick="rpsGame(this)">
+          <img src="/static/images/scissors.png" class="rps-image" id="scissor" alt="scissor" onclick="rpsGame(this)">
+        </div>
+        <div class="score-flexbox">
+          <h3>You: <span id="player-score-span">0</span></h4>
+          <h3>Computer: <span id="computer-score-span">0</span></h4>
+        </div>
+        <div class="buttons">
+          <button id="next-rps-button" onclick="nextRpsGame()">Next Game</button>
+          <button id="reset-rps-button" onclick="resetRpsGame()">Reset Game</button> 
+        </div>
+        
       </div>
     </div>
 

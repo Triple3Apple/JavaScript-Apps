@@ -45,7 +45,7 @@ body {
   padding: 5rem;
   border: 0.25rem solid black;
 
-  width: 40vw;
+  width: 60vw;
   /*
   height: 35vh;
   */
@@ -53,7 +53,9 @@ body {
   align-items: center;
   min-width: 500px;
 
-  background: rgb(191, 220, 230);
+  text-align: center;
+
+  background: blanchedalmond;
 
   /* 
   property specifies how much of the remaining space
@@ -74,16 +76,6 @@ body {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
-}
-
-.box1 {
-  background: blanchedalmond;
-}
-
-.box2 {
-  margin: 0 auto;
-  text-align: center;
-  background: blanchedalmond;
 }
 
 .box h2 {
@@ -210,4 +202,82 @@ button {
   outline-width: 0;
   border: 1px solid rgb(151, 151, 151);
   background: rgb(237, 237, 237);
+}
+
+#rps-img-flexbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 7.5rem;
+  height: 30rem;
+}
+
+#rps-img-flexbox img {
+  transition-duration: 0.1s;
+  margin-top: 5rem;
+  width: 20rem;
+}
+
+#rps-img-flexbox .rps-image:hover {
+  margin-top: 5rem;
+  -webkit-filter: drop-shadow(0 0 2rem rgb(81, 69, 255));
+  filter: drop-shadow(0 0 2rem rgb(81, 69, 255));
+  cursor: pointer;
+}
+
+#rps-img-flexbox h3 {
+  /* changed display to inline-block bc default is block which does not use padding, etc*/
+  display: inline-block;
+  padding: 3rem;
+  font-size: 3rem;
+  /* element now appears in the center */
+  align-self: center;
+}
+
+.score-flexbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.score-flexbox h3 {
+  font-size: 2.5rem;
+  padding: 2rem;
+  vertical-align: middle;
+}
+
+#reset-rps-button {
+  background-color: rgb(240, 70, 70);
+  color: white;
+  border: 0.2rem solid rgb(240, 70, 70);
+}
+
+#reset-rps-button:hover {
+  background-color: azure;
+  color: black;
+}
+
+#next-rps-button {
+  background-color: rgb(83, 119, 240);
+  color: white;
+  border: 0.2rem solid rgb(83, 119, 240);
+}
+
+#next-rps-button:hover {
+  background-color: azure;
+  color: black;
+}
+
+#player-rps-img {
+  -webkit-filter: drop-shadow(0 0 3rem rgb(81, 69, 255));
+  filter: drop-shadow(0 0 3rem rgb(81, 69, 255));
+  width: 20rem;
+}
+
+#computer-rps-img {
+  -webkit-filter: drop-shadow(0 0 3rem rgb(255, 69, 69));
+  filter: drop-shadow(0 0 3rem rgb(255, 69, 69));
+  width: 20rem;
 }
