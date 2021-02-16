@@ -198,6 +198,7 @@ function nextRpsGame() {
   var paperImg = document.createElement("img");
   var scissorImg = document.createElement("img");
 
+  // adding attributes to image elements
   rockImg.setAttribute("id", "rock");
   rockImg.setAttribute("class", "rps-image");
   rockImg.setAttribute("alt", "rock");
