@@ -202,19 +202,19 @@ function nextRpsGame() {
   rockImg.setAttribute("class", "rps-image");
   rockImg.setAttribute("alt", "rock");
   rockImg.setAttribute("onclick", "rpsGame(this)");
-  rockImg.src = "/static/images/rock.png";
+  rockImg.src = "/static/img/rock.png";
 
   paperImg.setAttribute("id", "paper");
   paperImg.setAttribute("class", "rps-image");
   paperImg.setAttribute("alt", "paper");
   paperImg.setAttribute("onclick", "rpsGame(this)");
-  paperImg.src = "/static/images/paper.png";
+  paperImg.src = "/static/img/paper.png";
 
   scissorImg.setAttribute("id", "scissor");
   scissorImg.setAttribute("class", "rps-image");
   scissorImg.setAttribute("alt", "scissor");
   scissorImg.setAttribute("onclick", "rpsGame(this)");
-  scissorImg.src = "/static/images/scissors.png";
+  scissorImg.src = "/static/img/scissors.png";
 
   var rpsFlexDiv = document.getElementById("rps-img-flexbox");
 
