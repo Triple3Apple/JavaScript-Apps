@@ -275,3 +275,73 @@ function changeBoxBGColor(selector) {
     all_boxes[i].classList.add(colorClass);
   }
 }
+
+function changeBoxBorderColor(selector) {
+  let optionChosen = selector.value;
+
+  let colorClass;
+
+  switch (optionChosen) {
+    case "Liver":
+      colorClass = "liver";
+      break;
+    case "Lust":
+      colorClass = "lust";
+      break;
+    case "Misty Rose":
+      colorClass = "misty-rose";
+      break;
+    case "Outrageous Orange":
+      colorClass = "outrageous-orange";
+      break;
+    default:
+      console.warn("Recieved value not in switch stmt: " + optionChosen);
+      return;
+  }
+
+  for (let i = 0; i < all_boxes.length; i++) {
+    // remove the current "color" class
+    all_boxes[i].classList.remove("liver");
+    all_boxes[i].classList.remove("lust");
+    all_boxes[i].classList.remove("misty-rose");
+    all_boxes[i].classList.remove("outrageous-orange");
+
+    // add the desired "color" class
+    all_boxes[i].classList.add(colorClass);
+  }
+}
+
+function changeBGColor(selector) {
+  let optionChosen = selector.value;
+
+  let colorClass;
+
+  switch (optionChosen) {
+    case "Pale Aqua":
+      colorClass = "pale-aqua";
+      break;
+    case "Sky Blue":
+      colorClass = "sky-blue";
+      break;
+    case "Papaya Whip":
+      colorClass = "papaya-whip";
+      break;
+    case "Pale Gold":
+      colorClass = "pale-gold";
+      break;
+    default:
+      console.warn("Recieved value not in switch stmt: " + optionChosen);
+      return;
+  }
+
+  let body = document.getElementsByClassName("simple-apps-container");
+
+  // remove the current "color" class
+  body[0].classList.remove("pale-aqua");
+  body[0].classList.remove("sky-blue");
+  body[0].classList.remove("papaya-whip");
+  body[0].classList.remove("pale-gold");
+
+  // add the desired "color" class
+  body[0].classList.add(colorClass);
+}

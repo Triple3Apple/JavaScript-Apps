@@ -322,3 +322,29 @@ button {
 }
 
 /* Box border colors */
+.liver {
+  border-color: rgb(83, 75, 79);
+}
+.lust {
+  border-color: rgb(230, 32, 32);
+}
+.misty-rose {
+  border-color: rgb(255, 228, 225);
+}
+.outrageous-orange {
+  border-color: rgb(255, 110, 74);
+}
+
+/* Page background color */
+.pale-aqua {
+  background: rgb(188, 212, 230);
+}
+.sky-blue {
+  background: rgb(135, 206, 235);
+}
+.papaya-whip {
+  background: rgb(255, 239, 213);
+}
+.pale-gold {
+  background: rgb(230, 190, 138);
+}
