@@ -14,16 +14,10 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
-body {
-  background: rgb(132, 134, 143);
-}
-
 /* flex-box container */
 .simple-apps-container {
-  /*  remove the border (for testing only)*/
-  border: 3px solid blue;
   position: relative;
-  background: lightgray;
+  background: rgb(188, 212, 230);
   display: flex;
 
   flex-direction: column;
@@ -43,7 +37,7 @@ body {
   margin: 1rem;
   background: none;
   padding: 5rem;
-  border: 0.25rem solid black;
+  border: 0.25rem solid rgb(83, 75, 79);
 
   width: 60vw;
   /*
@@ -280,4 +274,32 @@ button {
   -webkit-filter: drop-shadow(0 0 3rem rgb(255, 69, 69));
   filter: drop-shadow(0 0 3rem rgb(255, 69, 69));
   width: 20rem;
+}
+
+/* Page Custumizer Styling */
+
+.color-select-flexbox {
+  display: flex;
+
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.color-select-flexbox h3 {
+  border: 2px solid grey;
+
+  font-size: 2rem;
+
+  /* Might need to change */
+  text-align: left;
+  padding: 1rem;
+}
+
+.color-select-flexbox select {
+  text-align: right;
+  width: 25rem;
+  align-items: flex-start;
+  padding: 1rem;
+  font-size: 1.5rem;
 }
