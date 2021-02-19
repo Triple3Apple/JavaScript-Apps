@@ -237,3 +237,41 @@ function resetRpsGame() {
 function getRandInteger(min, max) {
   return Math.floor(Math.random() * max) + min;
 }
+
+// getting reference to all elements that have the class "box"
+var all_boxes = document.getElementsByClassName("box");
+
+function changeBoxBGColor(selector) {
+  let optionChosen = selector.value;
+
+  let colorClass;
+
+  switch (optionChosen) {
+    case "Blanched Almond":
+      colorClass = "blanched-almond";
+      break;
+    case "Coquelicot":
+      colorClass = "coquelicot";
+      break;
+    case "Mikado Yellow":
+      colorClass = "mikado-yellow";
+      break;
+    case "Glaucous":
+      colorClass = "glaucous";
+      break;
+    default:
+      console.warn("Recieved value not in switch stmt: " + optionChosen);
+      return;
+  }
+
+  for (let i = 0; i < all_boxes.length; i++) {
+    // remove the current "color" class
+    all_boxes[i].classList.remove("blanched-almond");
+    all_boxes[i].classList.remove("coquelicot");
+    all_boxes[i].classList.remove("mikado-yellow");
+    all_boxes[i].classList.remove("glaucous");
+
+    // add the desired "color" class
+    all_boxes[i].classList.add(colorClass);
+  }
+}
